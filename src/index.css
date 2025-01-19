@@ -1,0 +1,32 @@
+/* index.css */
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/portf.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  color: white; /* Ensures text color is readable */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 10px;
+}
+section {
+  padding: 20px;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #f4f4f4;
+}
