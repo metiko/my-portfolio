@@ -9,8 +9,8 @@ function Projects() {
           <div className="col-md-4">
             <div className="card shadow-sm">
               <div className="card-body">
-                <h5 className="card-title">Project 1</h5>
-                <p className="card-text">A brief description of Project 1.</p>
+                <h5 className="card-title">CRUD APP</h5>
+                <p className="card-text">The app is a CRUD application designed to manage a list of users. It allows users to create, read, update, and delete users. The app features a React-based frontend with a clean, responsive design for a user-friendly experience. It integrates with a Node.js Express backend, which provides RESTful API endpoints for data operations. Axios is used for API calls, and the backend handles JSON data with middleware like cors and express.json().</p>
               </div>
             </div>
           </div>
