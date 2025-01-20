@@ -11,6 +11,7 @@ function Skills() {
           <li className="list-group-item bg-primary text-white">Python</li>
           <li className="list-group-item bg-primary text-white">Docker</li>
           <li className="list-group-item bg-primary text-white">AWS</li>
+          <li className="list-group-item bg-primary text-white">Javascript</li> 
         </ul>
       </div>
     </section>
