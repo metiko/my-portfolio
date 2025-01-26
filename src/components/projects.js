@@ -40,6 +40,7 @@ function Projects() {
         The website leverages modern web technologies for optimal performance and is hosted on Netlify for
         fast and secure deployment.
       `,
+      githubLink: "https://github.com/metiko/my-portfolio.git"
     },
   ];
 
