@@ -29,8 +29,12 @@ The deployment focused on automation and maintaining high availability, with all
           <div className="col-md-4">
             <div className="card shadow-sm">
               <div className="card-body">
-                <h5 className="card-title">Project 3</h5>
-                <p className="card-text">A brief description of Project 3.</p>
+                <h5 className="card-title">Cloud-Native Commercial App</h5>
+                <p className="card-text">This project involved building a simple commercial app featuring an introductory page and a login/registration system. The backend was developed using FastAPI (or Node.js) for user authentication, while the frontend utilized React for an interactive user experience. 
+
+The app was Dockerized for portability and ease of deployment, with a CI/CD pipeline implemented using Jenkins to automate code building, testing, and deployment. 
+
+The application was hosted on an AWS EC2 instance, leveraging the AWS free tier to minimize costs. Static files, such as images or frontend assets, were stored in an S3 bucket for efficient content delivery. This setup ensured a streamlined, scalable, and cost-effective deployment process.</p>
               </div>
             </div>
           </div>
