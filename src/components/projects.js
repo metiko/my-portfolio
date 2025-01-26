@@ -34,11 +34,11 @@ function Projects() {
     {
       title: "Portfolio Website",
       description: `
-      A responsive and clean portfolio website designed to showcase projects, skills, and professional
-      experience. Built with React for dynamic content, the site features sections for projects, skills, and 
-      contact information. It is fully responsive, ensuring seamless viewing across devices. 
-      The website leverages modern web technologies for optimal performance and is hosted on Netlify for
-      fast and secure deployment..
+        A responsive and clean portfolio website designed to showcase projects, skills, and professional
+        experience. Built with React for dynamic content, the site features sections for projects, skills, and 
+        contact information. It is fully responsive, ensuring seamless viewing across devices. 
+        The website leverages modern web technologies for optimal performance and is hosted on Netlify for
+        fast and secure deployment.
       `,
     },
   ];
@@ -46,14 +46,14 @@ function Projects() {
   return (
     <section className="bg-light py-5">
       <div className="container">
-        <h2 className="text-center">Projects</h2>
-        <div className="row mt-4">
+        <h2 className="text-center mb-4">Projects</h2>
+        <div className="row">
           {projects.map((project, index) => (
-            <div key={index} className="col-md-4">
-              <div className="card shadow-sm">
+            <div key={index} className="col-lg-4 col-md-6 mb-4">
+              <div className="card shadow-lg border-0 rounded-lg">
                 <div className="card-body">
-                  <h5 className="card-title">{project.title}</h5>
-                  <p className="card-text">{project.description.trim()}</p>
+                  <h5 className="card-title text-dark font-weight-bold">{project.title}</h5>
+                  <p className="card-text text-muted">{project.description.trim()}</p>
                 </div>
               </div>
             </div>
