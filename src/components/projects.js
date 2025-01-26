@@ -18,9 +18,9 @@ function Projects() {
             <div className="card shadow-sm">
               <div className="card-body">
                 <h5 className="card-title">Socks-App Deployment</h5>
-                <p className="card-text">The Socks-App project involved deploying a MySQL-backed application using modern DevOps practices and AWS services. We containerized the application using **Docker** to ensure consistent environments across development, staging, and production. A **CI/CD pipeline** was implemented with **Jenkins**, automating the building, testing, and deployment process.  
+                <p className="card-text">The Socks-App project involved deploying a MySQL-backed application using modern DevOps practices and AWS services. I containerized the application using Docker to ensure consistent development, staging, and production environments. A CI/CD pipeline was implemented with Jenkins, automating the building, testing, and deployment processes. 
 
-For infrastructure management, we used **Terraform** to provision AWS resources such as **EC2 instances** for hosting the app, **S3 buckets** for storing application assets, and other required networking configurations. This setup ensured scalability, reliability, and cost-efficiency.  
+For infrastructure management, I used Terraform to provision AWS resources such as EC2 instances for hosting the app, S3 buckets for storing application assets, and other required networking configurations. This setup ensured scalability, reliability, and cost-efficiency.  
 
 The deployment focused on automation and maintaining high availability, with all components seamlessly integrated for optimal performance.</p>
               </div>
