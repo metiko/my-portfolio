@@ -31,6 +31,16 @@ function Projects() {
         stored in an S3 bucket for efficient content delivery.
       `,
     },
+    {
+      title: "Portfolio Website",
+      description: `
+      A responsive and clean portfolio website designed to showcase projects, skills, and professional
+      experience. Built with React for dynamic content, the site features sections for projects, skills, and 
+      contact information. It is fully responsive, ensuring seamless viewing across devices. 
+      The website leverages modern web technologies for optimal performance and is hosted on Netlify for
+      fast and secure deployment..
+      `,
+    },
   ];
 
   return (
