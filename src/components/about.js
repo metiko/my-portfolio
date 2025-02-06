@@ -33,9 +33,7 @@ function About() {
             transition={{ duration: 1 }}
           >
             <p>
-            Cloud and DevOps Engineer with extensive hands-on experience in supporting, automating, and optimizing deployments in both cloud and on-premise environments. Proficient in CI/CD pipeline development, container orchestration, infrastructure-as-code (IaC), and cloud platforms like AWS.
-
-Experienced in managing infrastructure, automating workflows, and improving operational efficiency through modern DevOps practices. Passionate about leveraging technology to deliver high-impact solutions.
+            Cloud, DevOps, and Full-Stack Engineer with extensive hands-on experience in supporting, automating, and optimizing deployments in both cloud and on-premise environments. Proficient in CI/CD pipeline development, container orchestration, infrastructure-as-code (IaC), and cloud platforms like AWS. Experienced in managing infrastructure, automating workflows, and improving operational efficiency through modern DevOps practices. Skilled in full-stack development with expertise in **React, FastAPI, and PostgreSQL**, building scalable web applications and integrating backend services. Passionate about leveraging technology to deliver high-impact solutions.
             </p>
           </motion.div>
         </div>
