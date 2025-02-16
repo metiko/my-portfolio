@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 function Projects() {
   const projects = [
@@ -45,23 +46,45 @@ function Projects() {
   ];
 
   return (
-    <section className="bg-light py-5">
+    <motion.section 
+      id="projects" 
+      className="bg-light py-5"
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 1 }} 
+      transition={{ duration: 1 }}
+    >
       <div className="container">
         <h2 className="text-center mb-4">Projects</h2>
         <div className="row">
           {projects.map((project, index) => (
-            <div key={index} className="col-lg-4 col-md-6 mb-4">
+            <motion.div 
+              key={index} 
+              className="col-lg-4 col-md-6 mb-4"
+              initial={{ y: 50, opacity: 0 }} 
+              animate={{ y: 0, opacity: 1 }} 
+              transition={{ duration: 0.8, delay: index * 0.2 }}
+            >
               <div className="card shadow-lg border-0 rounded-lg">
                 <div className="card-body">
                   <h5 className="card-title text-dark font-weight-bold">{project.title}</h5>
                   <p className="card-text text-muted">{project.description.trim()}</p>
+                  {project.githubLink && (
+                    <a 
+                      href={project.githubLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="btn btn-primary mt-2"
+                    >
+                      View on GitHub
+                    </a>
+                  )}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
