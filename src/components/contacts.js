@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import SocialIcons from './SocialIcons';  // Adjust if path is different
+
 
 function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
