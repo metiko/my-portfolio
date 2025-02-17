@@ -1,17 +1,18 @@
 import React from 'react';
 import Header from './components/header';
-import Home from './components/home';
+import Hero from './components/hero';
 import About from './components/about';
 import Projects from './components/projects';
 import Skills from './components/skills';
 import Contact from './components/contacts';
 import Footer from './components/footer';
 
+// Updated Home Section
 function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
+      <Hero /> {/* Updated Home Section */}
       <About />
       <Projects />
       <Skills />
