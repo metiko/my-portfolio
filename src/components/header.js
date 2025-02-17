@@ -1,7 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll'; // Import react-scroll for smooth scrolling
 
 function Header() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Check localStorage for the saved theme on load
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      setIsDarkMode(savedTheme === 'dark');
+    }
+  }, []);
+
+  // Toggle theme and save it to localStorage
+  const toggleTheme = () => {
+    setIsDarkMode((prev) => !prev);
+  };
+
+  // Apply dark mode to the body
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.body.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [isDarkMode]);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div className="container">
@@ -70,6 +96,16 @@ function Header() {
               >
                 Contact
               </Link>
+            </li>
+            <li className="nav-item">
+              {/* Dark mode toggle button */}
+              <button 
+                className="btn btn-outline-light" 
+                onClick={toggleTheme}
+                aria-label="Toggle Dark Mode"
+              >
+                {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+              </button>
             </li>
           </ul>
         </div>
